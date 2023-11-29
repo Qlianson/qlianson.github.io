@@ -5,8 +5,12 @@
     padding: 0;
 }
 
+
 body {
-    background: url('img/background.jpg') center center/cover no-repeat;
+    background-image: url('img/background.jpg');
+    /* background-size: contain; */
+    background-position: top;
+    background-repeat: no-repeat;
     background-color: black;
 }
 
@@ -33,7 +37,11 @@ body {
     position: absolute;
     top: 21px;
     right: 21px;
+    text-decoration: none;
+    font-size: 27px;
+    color: #909090;
 }
+
 
 .title {
     margin-top: 17px;
@@ -68,10 +76,20 @@ body {
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
-    color: #0771F0;
     font-size: 28px;
     font-weight: 400;
     line-height: 30px;
+    text-decoration: none;
+
+}
+
+.cancel_btn{
+    color: #0771F0;
+    text-decoration: none;
+}
+
+.install_btn{
+    color: #0771F0;
     text-decoration: none;
 }
 
