@@ -1,0 +1,102 @@
+$top-position: -30px;
+$left-position: -30px;
+
+@keyframes rotation {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+    
+}
+
+.reason {
+    padding: 140px 0 100px 0;
+    position: relative;
+    background: $main-color;
+    z-index: 1;
+
+    &__block {
+        margin-top: 20px;
+    }
+
+    &__wrapper {
+        margin-top: 70px;
+        position: relative;
+
+    }
+    &__name {
+        @include Heading3;
+    }
+
+    &__text {
+        @include RegularText;
+        margin-top: 15px;
+    }
+
+    &__spikes {
+        position: absolute;
+        overflow: hidden;
+        top: -150px;
+        right: 0;
+        z-index: 0;
+    }
+
+    &__wrapper:nth-child(1) {
+        &::before {
+            content: '';
+            position: absolute;
+            top: $top-position;
+            left: $left-position;
+            height: 109px;
+            width: 111px;
+            background: url('../icons/reason_1.svg') no-repeat center center / cover;
+            z-index: -1;
+        }
+    }
+
+    &__wrapper:nth-child(2) {
+        &::before {
+            content: '';
+            position: absolute;
+            top: $top-position;
+            left: $left-position;
+            height: 120px;
+            width: 118px;
+            background: url('../icons/reason_2.svg') no-repeat center center / cover;
+            z-index: -1;
+        }
+    }
+
+    &__wrapper:nth-child(3) {
+        &::before {
+            content: '';
+            position: absolute;
+            top: $top-position;
+            left: $left-position;
+            height: 97px;
+            width: 97px;
+            background: url('../icons/reason_3.svg') no-repeat center center / cover;
+            z-index: -1;
+        }
+    }
+
+    &__wrapper:nth-child(4) {
+        &::before {
+            content: '';
+            position: absolute;
+            top: $top-position;
+            left: $left-position;
+            height: 116px;
+            width: 116px;
+            background: url('../icons/reason_4.svg') no-repeat center center / cover;
+            animation: rotation 12s infinite linear;
+            z-index: -1;
+        }
+    }
+}
+

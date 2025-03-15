@@ -1,0 +1,200 @@
+@import 'libs/bootstrap.min';
+// @import 'libs/bootstrap-grid.min';
+@import 'base/mixins';
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: "Jost", serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+:root {
+    line-height: 1.4;
+  }
+  
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+    margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+address {
+    margin: 0;
+}
+
+.phone {
+    color: $yellow-color;
+}
+
+.title {
+    @include Heading2;
+}
+
+.text {
+    @include RegularText;
+}
+
+.button_main {
+    @include ButtonText;
+    text-transform: lowercase;
+    padding: 11px 25px 14px 25px;
+    background-color: #FFBD6C;
+    border: none;
+    border-radius: 5px;
+    filter: drop-shadow(9px 9px 11px rgba(86, 67, 41, 0.6));
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+
+    &:after {
+        background: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+      }
+
+
+
+}
+
+.button_second {
+    @include ButtonText;
+    color: $white-color;
+    padding: 11px 25px 14px 25px;
+    border: 2px solid $dark-yellow;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 6;
+
+
+    &:after {
+        background: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .1;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+      }
+
+}
+
+.authors {
+    background-color: #181818;
+
+
+    color:gray;
+    font-size: 16px;
+    padding: 17px 60px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__fellow {
+        a {
+            transition:all 0.5s;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: rgb(178, 178, 140);
+        }
+    }
+}
+
+
+
+@import 'blocks/promo';
+@import 'blocks/reason';
+@import 'blocks/about';
+@import 'blocks/price';
+@import 'blocks/works';
+@import 'blocks/faq';
+@import 'blocks/review';
+@import 'blocks/contacts';
+
+
+@media (pointer: fine) {
+
+    .button_main {
+        &:hover {
+            box-shadow: inset 0 0 6px rgb(255, 255, 255), 0 0 8px rgb(255, 142, 55);
+            &:after {
+                left: 120%;
+              }
+        }
+    }
+
+    .button_second {
+        &:hover {
+            box-shadow: inset 0 0 6px rgba(255, 241, 184, 0.5), 0 0 6px rgba(255, 240, 109, 0.5);
+            &:after {
+                left: 120%;
+              }
+        }
+    }
+
+    .promo {
+        &__header {
+            li:hover {
+                color: $yellow-color;
+            }
+        }
+        &__btn_price {
+            &:hover {
+                color: $white-color;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                    width: 120px;
+                    height: 8px;
+                    background: url('../icons/promo_price_arrow.svg') no-repeat center center / cover;
+                }
+            }
+        }
+    }
+}

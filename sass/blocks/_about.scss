@@ -1,0 +1,8 @@
+.about {
+    padding: 100px 0;
+    background: $main-color;
+    &__text {
+        @include RegularText;
+        margin-top: 70px;
+    }
+}

@@ -1,0 +1,42 @@
+// $accordion-button-icon: url('../icons/faq_arrow.svg');
+
+.faq {
+    padding: 100px 0;
+    background-color: $main-color;
+
+    &__accordion {
+        margin-top: 70px;
+    }
+
+    &__item {
+        --bs-accordion-border-radius: 0;
+        --bs-accordion-border-width: 0;
+        --bs-accordion-btn-bg: #101010;
+        --bs-accordion-bg: #161616;
+        --bs-accordion-active-bg: #161616;
+        --bs-accordion-btn-focus-box-shadow: none;
+        --bs-accordion-btn-icon: url('../icons/faq_arrow.svg');
+        --bs-accordion-btn-active-icon: url('../icons/faq_arrow.svg');
+        --bs-accordion-active-color: #FFBD6C;
+
+        --bs-accordion-body-padding-x: 30px;
+        --bs-accordion-body-padding-y: 24px;
+        --bs-accordion-btn-padding-x: 30px;
+        --bs-accordion-btn-padding-y: 24px;
+    }
+
+    &__item:not(:first-child) {
+        margin-top: 15px;
+    }
+
+    &__button {
+        @include RegularText;
+    }
+
+    &__body {
+        @include RegularText;
+
+    }
+
+
+}

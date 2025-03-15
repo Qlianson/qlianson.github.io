@@ -1,0 +1,35 @@
+.price {
+    padding: 100px 0;
+    background-color: $main-color;
+
+    &__wrapper {
+        margin-bottom: 70px;
+        position: relative;
+        z-index: 6;
+
+    }
+    
+    &__subtitle {
+        @include Heading3;
+        margin-top: 70px;
+    }
+
+    &__divider {
+        height: 2px;
+        width: 100%;
+        background-color: $dark-yellow;
+        margin: 0 15px;
+    }
+
+    ul {
+        @include RegularText;
+    }
+
+    li {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

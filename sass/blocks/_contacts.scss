@@ -1,0 +1,43 @@
+.contacts {
+    padding: 80px 0;
+    background-color: #101010;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    // &__items {
+    //     display: flex;
+
+    // }
+
+    &__item {
+        @include RegularText;
+        display: flex;
+    }
+
+    &__item:not(:first-child) {
+        margin-top: 45px;
+
+    }
+
+    &__content {
+        margin-left: 35px;
+    }
+
+    &__socials {
+        display: flex;
+    }
+
+    &__social:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    &__map {
+        img {
+            width: 100%;
+        }
+    }
+
+}

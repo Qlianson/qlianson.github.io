@@ -1,0 +1,37 @@
+.review {
+    padding: 100px 0 200px 0;
+    background: url('../img/review_flower.svg') no-repeat right 0 bottom 0;
+    background-color: $main-color;
+
+    &__item {
+        margin-top: 80px;
+    }
+
+    &__text {
+        @include RegularText;
+    }
+
+    &__text::before {
+        content: '';
+        display: block;
+        width: 144px;
+        height: 24px;
+        margin-bottom: 25px;
+        background: url('../icons/stars.svg') no-repeat center center / cover;
+    }
+
+    &__person {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    &__person-name {
+        @include RegularText;
+        color: #B5B5B5;
+        margin-left: 20px;
+    }
+
+    
+}
