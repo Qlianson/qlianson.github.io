@@ -1,16 +1,7 @@
 .contacts {
     padding: 80px 0;
     background-color: #101010;
-    &__block {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    // &__items {
-    //     display: flex;
 
-    // }
 
     &__item {
         @include RegularText;
@@ -34,10 +25,5 @@
         margin-left: 30px;
     }
 
-    &__map {
-        img {
-            width: 100%;
-        }
-    }
 
 }

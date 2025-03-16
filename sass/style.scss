@@ -102,6 +102,7 @@ address {
     position: relative;
     overflow: hidden;
     z-index: 6;
+    max-width: 275px;
 
 
     &:after {

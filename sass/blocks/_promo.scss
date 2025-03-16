@@ -24,11 +24,11 @@
     }
 
     &__title {
-        @include Heading1;
+        @include Heading2;
         margin-top: 100px;
         span {
-            font-size: 90px;
-            font-weight: 500;
+            @include Heading1;
+
         }
     }
 
