@@ -4,6 +4,7 @@
     background: linear-gradient(360deg, rgba(11,11,11, 1), rgba(11,11,11, 0)),
                 // url('../img/promo_logo.svg') no-repeat right 15% bottom 29% / 550px, 
                 url('../img/promo_bg.jpg') center center / cover no-repeat;
+        
 
     &__header {
         @include RegularText;
@@ -43,7 +44,8 @@
 
     &__btn_price {
         margin-top: 11px;
-        display: block;
+        display: inline-block;
+        width: 225px;
         font-size: 16px;
         font-weight: 300;
         color: rgba(255, 255, 255, 0.6);
@@ -72,10 +74,10 @@
         margin-top: 60px;
         color: $white-color;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         text-align: right;
-        z-index: 5;
+        z-index: 6;
 
     }
 

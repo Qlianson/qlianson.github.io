@@ -1,6 +1,15 @@
 .about {
     padding: 100px 0;
     background: $main-color;
+
+    &__img {
+        height: 550px;
+    }
+
+    &__block {
+        position: relative;
+        z-index: 5;
+    }
     &__text {
         @include RegularText;
         margin-top: 70px;

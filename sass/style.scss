@@ -125,7 +125,7 @@ address {
 
     color:gray;
     font-size: 16px;
-    padding: 17px 60px;
+    padding: 17px 0;
 
     &__wrapper {
         display: flex;
@@ -154,6 +154,9 @@ address {
 @import 'blocks/faq';
 @import 'blocks/review';
 @import 'blocks/contacts';
+
+@import 'base/media';
+
 
 
 @media (pointer: fine) {

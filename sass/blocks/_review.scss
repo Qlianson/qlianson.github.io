@@ -5,7 +5,12 @@
 
     &__item {
         margin-top: 80px;
+        // max-width: 47%;
     }
+
+    // &__item:nth-child(odd) {
+    //     margin-right: 150px;
+    // }
 
     &__text {
         @include RegularText;
