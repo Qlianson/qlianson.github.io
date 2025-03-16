@@ -137,11 +137,10 @@ address {
     &__fellow {
         a {
             transition:all 0.5s;
-        }
-        a:hover {
             text-decoration: underline;
             color: rgb(178, 178, 140);
         }
+
     }
 }
 
@@ -198,6 +197,14 @@ address {
                     height: 8px;
                     background: url('../icons/promo_price_arrow.svg') no-repeat center center / cover;
                 }
+            }
+        }
+    }
+
+    .authors {
+        &__fellow {
+            a:hover {
+                color: rgb(255, 255, 128);
             }
         }
     }
