@@ -73,6 +73,9 @@ address {
     filter: drop-shadow(9px 9px 11px rgba(86, 67, 41, 0.6));
     transition: all 0.2s ease-in-out;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:after {
         background: #fff;
@@ -103,6 +106,9 @@ address {
     overflow: hidden;
     z-index: 6;
     max-width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
     &:after {
@@ -200,6 +206,14 @@ address {
             }
         }
     }
+
+    // .works {
+    //     &__item:hover {
+    //         img {
+    //             filter: saturate(100%);
+    //         }
+    //     }
+    // }
 
     .authors {
         &__fellow {

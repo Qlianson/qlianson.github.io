@@ -86,6 +86,11 @@
 
 @media (max-width: 767px) {
     .promo {
+        background: linear-gradient(360deg, rgba(11,11,11, 1), rgba(11,11,11, 0)),
+        url('../img/promo_logo.svg') no-repeat right 5% bottom 60% / 250px, 
+        url('../img/promo_bg_gold.jpg') center center / cover no-repeat;
+
+
         &__work {
             display: none;
         }
