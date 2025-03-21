@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (link) {
         link.addEventListener('click', (event) => {
             gtag('event', 'click', {
-                'event_category': 'outbound',
+                'event_category': 'fellink',
                 'event_label': event.target.href,
                 'transport_type': 'beacon'
             });
