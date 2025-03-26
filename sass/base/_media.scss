@@ -88,7 +88,7 @@
     .promo {
         background: linear-gradient(360deg, rgba(11,11,11, 1), rgba(11,11,11, 0)),
         url('../img/promo_logo.svg') no-repeat right 5% bottom 60% / 250px, 
-        url('../img/promo_bg_gold.jpg') center center / cover no-repeat;
+        url('../img/promo_bg_gold_mobile.jpg') center center / cover no-repeat;
 
 
         &__work {
@@ -113,6 +113,17 @@
 
         }
     }
+
+    .review {
+        &__person {
+            img {
+                width: 40px;
+                height: 40px;
+
+            }
+        }
+    }
+    
 }
 
 @media (max-width: 576px) {
