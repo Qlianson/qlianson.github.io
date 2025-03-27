@@ -29,6 +29,12 @@
         }
     }
 
+    .review {
+        &__block {
+            column-count: 1;
+            column-gap: 0;
+        }
+    }
 
     .contacts {
 
@@ -69,11 +75,6 @@
         }
     }
 
-    .review {
-        &__item {
-            max-width: 47%;
-        }
-    }
 
     .reason {
         &__wrapper {

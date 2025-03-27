@@ -3,14 +3,17 @@
     background: url('../img/review_flower.svg') no-repeat right 0 bottom 0;
     background-color: $main-color;
 
-    &__item {
-        margin-top: 80px;
-        // max-width: 47%;
+    &__block {
+        column-count: 2;
+        column-gap: 115px;
     }
 
-    // &__item:nth-child(odd) {
-    //     margin-right: 150px;
-    // }
+    &__item {
+        margin-top: 80px;
+        display: inline-block;
+        width: 100%;
+    }
+
 
     &__text {
         @include RegularText;
