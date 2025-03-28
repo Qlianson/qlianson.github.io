@@ -1,5 +1,4 @@
 @import 'libs/bootstrap.min';
-// @import 'libs/bootstrap-grid.min';
 @import 'base/mixins';
 
 
@@ -89,8 +88,6 @@ address {
         transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
         width: 50px;
       }
-
-
 
 }
 
@@ -206,14 +203,6 @@ address {
             }
         }
     }
-
-    // .works {
-    //     &__item:hover {
-    //         img {
-    //             filter: saturate(100%);
-    //         }
-    //     }
-    // }
 
     .authors {
         &__fellow {
