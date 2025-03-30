@@ -204,6 +204,14 @@ address {
         }
     }
 
+    .price {
+        &__list {
+            li:hover {
+                color: $yellow-color;
+            }
+        }
+    }
+
     .authors {
         &__fellow {
             a:hover {
