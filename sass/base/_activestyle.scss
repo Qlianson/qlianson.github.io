@@ -1,0 +1,19 @@
+.hidden {
+    display: none;
+}
+
+.disable-btn {
+    @include ButtonText;
+    text-transform: lowercase;
+    padding: 11px 25px 14px 25px;
+    background-color: darkgray;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: not-allowed !important;
+}
+
