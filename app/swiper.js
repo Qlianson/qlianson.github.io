@@ -12,8 +12,8 @@ const swiper = new Swiper('.swiper', {
         allowTouchMove: false,
         breakpoints: {
             992: {
-                slidesPerView: 3,
-                allowTouchMove: false,
+                slidesPerView: 3.2,
+                allowTouchMove: true,
             },
             0: {
                 slidesPerView: 1.1,
