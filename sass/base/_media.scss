@@ -61,6 +61,11 @@
 
     }
 
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important;
+    }
+
 
 
 }
@@ -93,10 +98,6 @@
         }
     }
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: none !important;
-    }
 
 }
 
