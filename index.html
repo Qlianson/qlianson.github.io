@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" href="icons/fav/fav_icon_apple.png" sizes="180x180" type="image/png">
     <link rel="icon" href="icons/fav/fav_icon32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="icons/fav/fav_icon16.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <meta name="description" content="Премиальный барбершоп Heisenberg в центре Кишинева — стильные стрижки, бритьё и уход за бородой от лучшего мастера. Ты выйдешь с чувством покарять весь мир — записывайся уже сегодня!">
     <link rel="stylesheet" href="style/style.min.css">
     <title>Heisenberg - Барбершоп</title>
@@ -69,7 +70,7 @@
             </div>
     
             <div class="promo__buttons offset-lg-1 col-12 col-sm-6 d-flex flex-column">
-                <a target="_blank" rel="noopener noreferrer" href="https://n831754.alteg.io/" class="disable-btn">
+                <a target="_blank" rel="noopener noreferrer" href="https://n831754.alteg.io/" class="button_main">
                     записаться на стрижку
                 </a>
                 <a href="#price" class="promo__btn_price">
@@ -226,16 +227,30 @@
     <section class="works" id="photo">
         <div class="container">
             <h2 class="title">галерея</h2>
-            <div class="works__block row">
-                <div class="works__item col-12 col-md-4">
-                    <img src="img/works_1.jpg" loading="lazy" alt="стрижка клиента" class="works__img">
+
+            <div class="swiper mt-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/ph_1.JPG" loading="lazy" alt="стрижка клиента" class="works__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ph_2.JPG" loading="lazy" alt="фотография в студии" class="works__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ph_3.JPG" loading="lazy" alt="срижка клиента" class="works__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ph_4.JPG" loading="lazy" alt="фотография в студии" class="works__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ph_5.JPG" loading="lazy" alt="фотография в студии" class="works__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ph_6.JPG" loading="lazy" alt="фотография в студии" class="works__img">
+                    </div>
                 </div>
-                <div class="works__item col-12 col-md-4">
-                    <img src="img/works_3.jpg" loading="lazy" alt="фотография в студии" class="works__img">
-                </div>
-                <div class="works__item col-12 col-md-4">
-                    <img src="img/works_2.jpg" loading="lazy" alt="срижка клиента" class="works__img">
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -513,6 +528,7 @@
     </div>
 
     <script src="app/bootstrap.js"></script>
+    <script src="app/swiper.js" type="module"></script>
     <script src="app/script.js"></script>
 
 </body>

@@ -4,6 +4,11 @@
     position: relative;
     z-index: 5;
 
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $yellow-color;
+    }
+
     &__block {
         margin-top: 70px;
 
