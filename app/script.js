@@ -4,10 +4,10 @@ window.addEventListener('DOMContentLoaded', () => {
           button = document.querySelector('#address-btn'),
           STORAGE_KEY = 'addressChecked'
 
-    if (!localStorage.getItem(STORAGE_KEY)) {
-        popup.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-    }
+    // if (!localStorage.getItem(STORAGE_KEY)) {
+    //     popup.classList.remove('hidden');
+    //     document.body.style.overflow = 'hidden';
+    // }
 
     checkbox.addEventListener('change', () => {
         if (checkbox.checked) {
